@@ -1,9 +1,6 @@
-import '../styles/globals.css';
-import '../styles/Home.module.css';
 import React from 'react';
 import { Metadata } from 'next';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import HomePage from './home-page';
 
 export const metadata: Metadata = {
   title: 'Torie Kim Developer Portfolio',
@@ -25,14 +22,12 @@ export const metadata: Metadata = {
   },
 };
 
-const Home = ({ children }: { children: React.ReactNode }) => {
+const Page = () => {
   return (
-    <main className="dark:bg-gray-800 w-full">
-      <Navbar />
-      <div>{children}</div>
-      <Footer />
+    <main>
+      <HomePage />
     </main>
   );
 };
 
-export default Home;
+export default Page;
