@@ -29,19 +29,19 @@ interface UserData {
   experience: Experience[];
   resumeUrl: string;
   socialLinks: {
-    instagram: string;
-    twitter: string;
-    linkedin: string;
-    github: string;
-    facebook: string;
-    leetcode: string;
+    instagram?: string;
+    twitter?: string;
+    linkedin?: string;
+    github?: string;
+    facebook?: string;
+    leetcode?: string;
   };
 }
 
 const userData: UserData = {
   githubUsername: '',
-  name: '',
-  designation: '',
+  name: 'Torie Kim',
+  designation: 'Software Developer',
   avatarUrl: '',
   email: '',
   phoneNumber: '',
@@ -55,12 +55,12 @@ const userData: UserData = {
   experience: [],
   resumeUrl: '',
   socialLinks: {
-    instagram: '',
-    twitter: '',
-    linkedin: '',
-    github: '',
-    facebook: '',
-    leetcode: '',
+    // instagram: '',
+    // twitter: '',
+    linkedin: 'https://linkedin.com/in/victoriakim20',
+    github: 'https://github.com/toriekim',
+    // facebook: '',
+    // leetcode: '',
   },
 };
 
