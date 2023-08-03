@@ -4,6 +4,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Landing from '@/components/Landing';
 
 export const metadata: Metadata = {
   title: 'Torie Kim Developer Portfolio',
@@ -27,10 +28,11 @@ export const metadata: Metadata = {
 
 const Home = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main className="dark:bg-gray-800 w-full">
-      <Navbar />
+    <main>
+      <Landing />
+      {/* <Navbar />
       <div>{children}</div>
-      <Footer />
+      <Footer /> */}
     </main>
   );
 };
