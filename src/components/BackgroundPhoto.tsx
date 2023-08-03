@@ -13,7 +13,7 @@ const BackgroundPhoto = ({ src, alt, className }: Props) => {
       src={src}
       alt={alt}
       fill={true}
-      className={'min-w-full object-cover' + (className ?? '')}
+      className={'min-w-full object-cover ' + (className ?? '')}
     />
   );
 };
