@@ -12,10 +12,13 @@ const BackgroundPhoto = ({ src, alt, className }: Props) => {
     <Image
       src={src}
       alt={alt}
-      fill={true}
+      fill
       placeholder="blur"
+      quality={100}
       className={'min-w-full object-cover ' + (className ?? '')}
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      sizes="100vw"
+      priority
+      unoptimized
     />
   );
 };
