@@ -21,6 +21,7 @@ module.exports = {
     },
     fontFamily: {
       display: ['Brown Sugar'],
+      body: ['Work Sans'],
     },
   },
   variants: {

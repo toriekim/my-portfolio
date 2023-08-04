@@ -13,7 +13,7 @@ const Logo = ({ width, height, className }: Props) => {
       alt="personal brand logo for VK"
       width={width}
       height={height}
-      className={'z-50 m-5 ' + (className ?? '')}
+      className={'z-50 ' + (className ?? '')}
     />
   );
 };
