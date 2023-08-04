@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import Providers from './providers';
+import Navbar from '@/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({
     // https://github.com/pacocoursey/next-themes#with-app
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        {/* TO DO: Add Nav Bar & Footer here, since it's UI that is shared globally */}
+        <Navbar />
         <Providers>{children}</Providers>
       </body>
     </html>
