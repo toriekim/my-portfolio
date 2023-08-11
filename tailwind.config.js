@@ -10,6 +10,16 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        chartreuse: '#D6E041',
+        primaryGreen: '#406646',
+        darkGreen: '#183620',
+        darkEmerald: '#082630',
+        orangeRed: '#CB3032',
+        redBrown: '#9B4819',
+        yellowParchment: '#FBFAF0',
+        orangeParchment: '#F4F1E8',
+      },
       boxShadow: {
         vignette: '0 0 200px white inset',
       },
