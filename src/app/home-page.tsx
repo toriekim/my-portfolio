@@ -7,9 +7,9 @@ const HomePage = () => {
       <BackgroundPhoto
         src={landingPhoto}
         alt="landing profile picture of Torie sitting in dramatic bushes"
-        className="object-center"
+        className="z-0 object-center"
       />
-      <h1 className="font-display absolute bottom-1/3 z-50 mx-5 text-center text-8xl text-white">
+      <h1 className="font-display absolute bottom-1/3 mx-5 text-center text-8xl text-white">
         Hi, I&apos;m Torie
       </h1>
     </div>
