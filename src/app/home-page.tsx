@@ -1,15 +1,19 @@
-import BackgroundPhoto from '@/components/BackgroundPhoto';
 import landingPhoto from '../../public/landing.jpg';
+import Image from 'next/image';
 
 const HomePage = () => {
   return (
-    <div className="relative flex h-[100vh] flex-col items-center justify-between">
-      <BackgroundPhoto
+    <div className="relative flex h-[150vh] flex-col items-center justify-between">
+      <Image
         src={landingPhoto}
         alt="landing profile picture of Torie sitting in dramatic bushes"
-        className="z-0 object-center"
+        fill
+        quality={100}
+        className={'max-w-md max-h-[60%] object-cover ml-auto mt-[20%] mb-auto'}
+        priority
+        unoptimized
       />
-      <h1 className="font-display absolute bottom-1/3 mx-5 text-center text-8xl text-white">
+      <h1 className="font-display absolute top-[8%] text-[150px] text-white text-center">
         Hi, I&apos;m Torie
       </h1>
     </div>
