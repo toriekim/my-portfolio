@@ -15,4 +15,5 @@ export const colors = {
   black: '#000000',
 };
 
-export const menuItems = ['about', 'experience', 'projects', 'contact'];
+// TO DO: 'contact'
+export const menuItems = ['about', 'portfolio'];
