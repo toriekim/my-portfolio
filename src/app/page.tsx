@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <main className="mx-10">
+    <main className="mx-14">
       <HomePage />
     </main>
   );

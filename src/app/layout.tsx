@@ -18,7 +18,7 @@ export default function RootLayout({
     // https://github.com/pacocoursey/next-themes#with-app
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${work_sans.className} bg-yellowParchment dark:bg-darkEmerald`}
+        className={`${work_sans.className} bg-yellowParchment  dark:bg-darkEmerald font-light`}
       >
         <Providers>
           <Navbar />
