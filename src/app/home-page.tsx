@@ -1,13 +1,15 @@
 import '../styles/Home.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const HomePage = () => {
   return (
-    <div className="mt-[80px] flex h-[100vh] flex-col gap-4">
+    <div className="mt-[64px] flex h-[calc(100vh-64px)] flex-col items-center gap-4">
       {/* middle-content */}
-      <div className="flex h-[80vh] flex-col-reverse items-end gap-6 sm:flex-row">
+      <div className="my-5 flex h-[80vh] flex-col-reverse items-end gap-6 sm:flex-row">
         {/* short-bio */}
         <div className="flex grow flex-col gap-4">
-          <h1 className="font-display -mb-3 text-[10vw] leading-[1em] tracking-wider">
+          <h1 className="font-display text-primaryGreen dark:text-yellowParchment -mb-3 text-[10vw] leading-[1em] tracking-wider">
             Hi,&#8202;I&#8217;m Torie
           </h1>
           <p className="pl-3">
@@ -33,12 +35,12 @@ const HomePage = () => {
           />
         </picture>
       </div>
-      {/* <div className="flex flex-col items-end w-full g-0">
-        <h3 className="font-display text-[36px] -mb-2 tracking-wide">
-          Victoria&#8196;Kim&#8202;-&#8202;Karpak
-        </h3>
-        <h3>Software Developer</h3>
-      </div> */}
+      <FontAwesomeIcon
+        icon={faAngleDown}
+        bounce
+        size="lg"
+        className="text-primaryGreen dark:text-chartreuse"
+      />
     </div>
   );
 };
