@@ -1,9 +1,12 @@
-import '../styles/globals.css';
-import { Work_Sans } from 'next/font/google';
-import Providers from './providers';
-import Navbar from '@/components/Navbar';
+import "../styles/globals.css";
+import { Work_Sans } from "next/font/google";
+import Providers from "./providers";
+import Navbar from "@/components/Navbar";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
-const work_sans = Work_Sans({ subsets: ['latin'] });
+const work_sans = Work_Sans({ subsets: ["latin"] });
 
 // The app directory MUST include a root layout
 // Root layout MUST define <html> & <body> tags since Next.js doesn't auto create them. It's also used to define other globally shared UI
@@ -17,7 +20,9 @@ export default function RootLayout({
     // Note! If you do not add suppressHydrationWarning to your <html> you will get warnings because next-themes updates that element. This property only applies one level deep, so it won't block hydration warnings on other elements.
     // https://github.com/pacocoursey/next-themes#with-app
     <html lang="en" suppressHydrationWarning>
-      <body className={work_sans.className}>
+      <body
+        className={`${work_sans.className} bg-yellowParchment  font-light dark:bg-darkEmerald`}
+      >
         <Providers>
           <Navbar />
           {children}
