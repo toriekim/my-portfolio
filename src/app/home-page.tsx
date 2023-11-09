@@ -1,6 +1,6 @@
-import '../styles/Home.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import "../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const HomePage = () => {
   return (
@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className="my-5 flex h-[80vh] flex-col-reverse items-end gap-6 sm:flex-row">
         {/* short-bio */}
         <div className="flex grow flex-col gap-4">
-          <h1 className="font-display text-primaryGreen dark:text-yellowParchment -mb-3 text-[10vw] leading-[1em] tracking-wider">
+          <h1 className="-mb-3 font-display text-[10vw] leading-[1em] tracking-wider text-primaryGreen dark:text-yellowParchment">
             Hi,&#8202;I&#8217;m Torie
           </h1>
           <p className="pl-3">
