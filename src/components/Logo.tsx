@@ -10,7 +10,7 @@ interface Props {
 const Logo = ({ width, height, className, theme }: Props) => {
   return (
     <Image
-      src={theme === 'dark' ? '/light-logo2.png' : '/dark-logo2.png'}
+      src={theme === 'dark' ? '/light-logo3.png' : '/dark-logo3.png'}
       alt="personal brand logo for VK"
       width={width}
       height={height}

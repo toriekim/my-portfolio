@@ -4,11 +4,11 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const HomePage = () => {
   return (
-    <div className=" mx-14 mt-[64px] flex h-[calc(100vh-64px)] flex-col items-center gap-10">
+    <div className="mx-14 mt-[64px] flex h-[calc(100vh-64px)] flex-col items-center gap-10">
       {/* left-side content */}
       <div className="my-5 flex h-[80vh] flex-col-reverse items-end gap-6 sm:flex-row">
         <div className="flex grow flex-col gap-6">
-          <h1 className="-mb-3 font-display text-[10vw] leading-[1em] tracking-wider text-primaryGreen dark:text-yellowParchment">
+          <h1 className="font-display text-primaryGreen dark:text-yellowParchment -mb-3 text-[10vw] leading-[1em] tracking-wider">
             Hi,&#8202;I&#8217;m Torie
           </h1>
           <p className="pl-3">
