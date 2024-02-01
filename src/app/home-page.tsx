@@ -21,7 +21,7 @@ const HomePage = () => {
         <picture className="flex h-full grow-[2]">
           <img
             id="landingImage"
-            src="/landing.jpg"
+            src="/landing-photo.jpg"
             alt="landing profile picture of Torie sitting in dramatic bushes"
             className="object-cover"
           />
