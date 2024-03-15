@@ -16,4 +16,4 @@ export const colors = {
 };
 
 // TO DO: 'contact'
-export const menuItems = ['about', 'portfolio'];
+export const menuItems = ['about', 'work', 'contact'];
