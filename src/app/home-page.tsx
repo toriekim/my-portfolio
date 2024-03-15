@@ -1,24 +1,35 @@
-import '../styles/Home.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import "../styles/Home.module.css";
 
 const HomePage = () => {
   return (
-    <div className="mx-14 mt-[64px] flex h-[calc(100vh-64px)] flex-col items-center gap-10">
-      {/* left-side content */}
-      <div className="my-5 flex h-[80vh] flex-col-reverse items-end gap-6 sm:flex-row">
-        <div className="flex grow flex-col gap-6">
-          <h1 className="font-display text-primaryGreen dark:text-yellowParchment -mb-3 text-[10vw] leading-[1em] tracking-wider">
-            Hi,&#8202;I&#8217;m Torie
-          </h1>
-          <p className="pl-3">
-            I’m a software developer with an eye for design and an penchant for
-            creativity in all its forms and output. Based in Boston, MA, I
-            translate solutions into robust applications with meaningful impact.
-          </p>
+    <div className="mt-[80px] inline-flex h-[624px] flex-col items-center gap-2.5 p-[100px]">
+      <div className="inline-flex items-center justify-start gap-[50px] self-stretch">
+        {/* left-side content */}
+        <div className="inline-flex shrink grow basis-0 flex-col items-end justify-center gap-5 self-stretch">
+          <div className="flex flex-col items-start justify-center gap-2.5 self-stretch">
+            <h1 className="self-stretch py-[25px] font-display text-[80px] font-normal leading-[100px] tracking-[3px] text-darkGreen dark:text-orangeParchment">
+              Victoria Kim
+            </h1>
+            <h3 className="self-stretch font-display text-[27px] font-bold leading-[30px] text-primaryGreen dark:text-chartreuse">
+              Software Engineer
+            </h3>
+            <p className="self-stretch leading-normal tracking-wide">
+              Hi, most call me Torie! I have a penchant for creativity in all
+              its forms and output. I translate ideas and solutions into robust
+              applicaitons. Based in Boston, MA.
+            </p>
+          </div>
+          {/* about button */}
+          <div className="flex w-[166px] flex-col items-end justify-between pr-5">
+            <div className="inline-flex items-center justify-end rounded-[5px] bg-magentaPink px-[35px] py-3">
+              <button className="text-center text-[15px] font-medium leading-tight tracking-wide text-yellowParchment">
+                About me
+              </button>
+            </div>
+          </div>
         </div>
         {/* profile image */}
-        <picture className="flex h-full grow-[2]">
+        <picture className="inline-flex shrink grow basis-0 self-stretch">
           <img
             id="landingImage"
             src="/landing-photo.jpg"
@@ -27,12 +38,6 @@ const HomePage = () => {
           />
         </picture>
       </div>
-      <FontAwesomeIcon
-        icon={faAngleDown}
-        bounce
-        size="lg"
-        className="text-primaryGreen dark:text-chartreuse"
-      />
     </div>
   );
 };

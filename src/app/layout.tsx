@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/wwe7svy.css" />
       </head>
       <body
-        className={`${ibm_plex_mono.className} bg-yellowParchment  font-light dark:bg-darkEmerald`}
+        className={`${ibm_plex_mono.className} bg-yellowParchment  font-light text-darkEmerald dark:bg-darkEmerald dark:text-yellowParchment`}
       >
         <Providers>
           <Navbar />
