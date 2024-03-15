@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-work-sans);
+  font-family: var(--font-ibm-plex-mono);
 }
 
 a {
