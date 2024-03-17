@@ -1,7 +1,10 @@
 interface Project {
   title: string;
   link: string;
+  type: string;
+  description: string;
   imgUrl: string;
+  tags: string[];
 }
 
 interface Experience {
@@ -9,6 +12,17 @@ interface Experience {
   company: string;
   year: string;
   companyLink: string;
+  description: string;
+  tags: string[];
+}
+
+interface Skill {
+  name: string;
+  list: string[];
+}
+
+interface Role {
+  name: string;
   description: string;
 }
 
@@ -20,13 +34,15 @@ interface UserData {
   email: string;
   phoneNumber: string;
   address: string;
-  projects: Project[];
   about: {
     title: string;
     description: string[];
     currentProject: Project | null;
   };
+  roles: Role[];
+  skills: Skill[];
   experience: Experience[];
+  projects: Project[];
   resumeUrl: string;
   socialLinks: {
     instagram?: string;
@@ -37,31 +53,3 @@ interface UserData {
     leetcode?: string;
   };
 }
-
-const userData: UserData = {
-  githubUsername: '',
-  name: 'Torie Kim',
-  designation: 'Software Developer',
-  avatarUrl: '',
-  email: '',
-  phoneNumber: '',
-  address: '',
-  projects: [],
-  about: {
-    title: '',
-    description: [],
-    currentProject: null,
-  },
-  experience: [],
-  resumeUrl: '',
-  socialLinks: {
-    // instagram: '',
-    // twitter: '',
-    linkedin: 'https://linkedin.com/in/victoriakim20',
-    github: 'https://github.com/toriekim',
-    // facebook: '',
-    // leetcode: '',
-  },
-};
-
-export default userData;

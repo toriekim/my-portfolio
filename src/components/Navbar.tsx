@@ -1,14 +1,13 @@
-"use client";
+'use client';
 
-import { useTheme } from "next-themes";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import Logo from "./Logo";
-import { menuItems } from "@/constants";
-import userData from "@/constants/userData";
-import { colors } from "@/constants";
-import { debounce } from "@/utlities/helpers";
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import Logo from './Logo';
+import { menuItems, userData } from '@/constants';
+import { colors } from '@/constants';
+import { debounce } from '@/utlities/helpers';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -29,7 +28,7 @@ const Navbar = () => {
     setVisible(
       (prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > 70) ||
-        currentScrollPos < 10,
+        currentScrollPos < 10
     );
 
     // set state to new scroll position
@@ -37,10 +36,10 @@ const Navbar = () => {
   }, 100);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [prevScrollPos, visible, handleScroll]);
 
@@ -69,7 +68,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed z-50 mx-auto h-20 w-[100%] bg-yellowParchment  pb-[12px] pl-[30px] pr-[47px] pt-[13px] transition-[top] duration-[0.6s] dark:bg-darkEmerald ${
-        visible ? "top-0" : "top-[-64px]"
+        visible ? 'top-0' : 'top-[-64px]'
       }`}
     >
       <div className="flex items-center justify-between md:flex-row">
@@ -98,12 +97,12 @@ const Navbar = () => {
                   height="24"
                   viewBox="0 0 448 512"
                   fill={
-                    theme === "dark"
+                    theme === 'dark'
                       ? `${colors.parchment1}`
                       : `${colors.darkEmerald}`
                   }
                   className={
-                    theme === "dark"
+                    theme === 'dark'
                       ? `hover:fill-chartreuse`
                       : `hover:fill-magentaPink`
                   }
@@ -125,12 +124,12 @@ const Navbar = () => {
                   height="23"
                   viewBox="0 0 496 512"
                   fill={
-                    theme === "dark"
+                    theme === 'dark'
                       ? `${colors.parchment1}`
                       : `${colors.darkEmerald}`
                   }
                   className={
-                    theme === "dark"
+                    theme === 'dark'
                       ? `hover:fill-chartreuse`
                       : `hover:fill-magentaPink`
                   }
@@ -144,7 +143,7 @@ const Navbar = () => {
                 aria-label="Toggle Dark Mode"
                 type="button"
                 className="rounded focus:outline-none"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               >
                 {mounted && (
                   <svg
@@ -154,7 +153,7 @@ const Navbar = () => {
                     stroke="currentColor"
                     className="h-4 w-4 text-yellow-500 dark:text-yellow-500"
                   >
-                    {theme === "dark" ? (
+                    {theme === 'dark' ? (
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"

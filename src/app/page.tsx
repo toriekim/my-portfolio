@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import HomePage from './home-page';
 import AboutPage from './about/about-page';
 import RolesPage from './roles/roles-page';
+import SkillsPage from './experience/skills-page';
+import ExperiencePage from './experience/experience-page';
 
 export const metadata: Metadata = {
   title: 'Torie Kim',
@@ -30,6 +32,8 @@ const Page = () => {
       <HomePage />
       {/* <AboutPage /> */}
       <RolesPage />
+      <SkillsPage />
+      {/* <ExperiencePage /> */}
     </main>
   );
 };
