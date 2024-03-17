@@ -1,34 +1,35 @@
-import "../styles/Home.module.css";
+import Button from '@/components/Button';
+import '../styles/Home.module.css';
 
 const HomePage = () => {
   return (
-    <div className="mt-[80px] inline-flex h-[624px] flex-col items-center gap-2.5 p-[100px]">
-      <div className="inline-flex items-center justify-start gap-[50px] self-stretch">
+    <div className="mt-[80px] p-[100px]">
+      <div className="inline-flex flex-col items-center justify-start gap-10 md:flex-row">
         {/* left-side content */}
-        <div className="inline-flex shrink grow basis-0 flex-col items-end justify-center gap-5 self-stretch">
-          <div className="flex flex-col items-start justify-center gap-2.5 self-stretch">
-            <h1 className="self-stretch py-[25px] font-display text-[80px] font-normal leading-[100px] tracking-[3px] text-darkGreen dark:text-orangeParchment">
+        <div className="inline-flex shrink grow basis-0 flex-col items-center justify-center gap-8 self-stretch md:items-end">
+          {/* hero text */}
+          <div className="flex flex-col items-center justify-center gap-5 text-center md:items-start md:text-left">
+            <h1 className="self-stretch py-[25px] font-display text-[5rem] font-normal leading-[5.5rem] tracking-[0.125rem] text-darkGreen dark:text-orangeParchment md:order-1">
               Victoria Kim
             </h1>
-            <h3 className="self-stretch font-display text-[27px] font-bold leading-[30px] text-primaryGreen dark:text-chartreuse">
+            <h3 className="order-first self-stretch font-display text-[1.75rem] font-bold leading-[30px] tracking-[0.015625rem] text-magentaPink dark:text-chartreuse md:order-2">
               Software Engineer
             </h3>
-            <p className="self-stretch leading-normal tracking-wide">
-              Hi, most call me Torie! I have a penchant for creativity in all
-              its forms and output. I translate ideas and solutions into robust
-              applicaitons. Based in Boston, MA.
+            <p className="self-stretch leading-relaxed tracking-wide md:order-3">
+              Hi, most call me Torie! I thrive in the intersection between
+              artistic creativity and technical solutions, translating ideas
+              into robust applications. Based in Boston, MA.
             </p>
           </div>
           {/* about button */}
-          <div className="flex w-[166px] flex-col items-end justify-between pr-5">
-            <div className="inline-flex items-center justify-end rounded-[5px] bg-magentaPink px-[35px] py-3">
-              <button className="text-center text-[15px] font-medium leading-tight tracking-wide text-yellowParchment">
-                About me
-              </button>
-            </div>
-          </div>
+          <Button
+            containerClass="md:w-[166px] md:items-end"
+            buttonClass="md:w-[166px] text-[15px] text-yellowParchment dark:text-darkEmerald bg-magentaPink px-[35px] py-3 dark:bg-chartreuse"
+            buttonText="About me"
+          />
         </div>
-        {/* profile image */}
+
+        {/* hero image */}
         <picture className="inline-flex shrink grow basis-0 self-stretch">
           <img
             id="landingImage"
