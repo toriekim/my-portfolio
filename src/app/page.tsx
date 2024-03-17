@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import HomePage from './home-page';
-import AboutPage from './about/about-page';
+// import AboutPage from './about/about-page';
 import RolesPage from './roles/roles-page';
 import SkillsPage from './experience/skills-page';
 import ExperiencePage from './experience/experience-page';
@@ -33,7 +33,7 @@ const Page = () => {
       {/* <AboutPage /> */}
       <RolesPage />
       <SkillsPage />
-      {/* <ExperiencePage /> */}
+      <ExperiencePage />
     </main>
   );
 };
