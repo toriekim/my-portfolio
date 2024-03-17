@@ -1,7 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
 import HomePage from './home-page';
-import AboutPage from './about/about-page'
+import AboutPage from './about/about-page';
+import RolesPage from './roles/roles-page';
 
 export const metadata: Metadata = {
   title: 'Torie Kim',
@@ -25,9 +26,10 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <main>
+    <main className="mx-[7vw] md:mx-[6.2vw]">
       <HomePage />
-      <AboutPage />
+      {/* <AboutPage /> */}
+      <RolesPage />
     </main>
   );
 };

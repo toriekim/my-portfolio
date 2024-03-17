@@ -1,15 +1,15 @@
-import "../styles/globals.css";
-import { IBM_Plex_Mono } from "next/font/google";
-import Providers from "./providers";
-import Navbar from "@/components/Navbar";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+import '../styles/globals.css';
+import { IBM_Plex_Mono } from 'next/font/google';
+import Providers from './providers';
+import Navbar from '@/components/Navbar';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
 const ibm_plex_mono = IBM_Plex_Mono({
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
+  weight: ['300', '400', '500', '600'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
 });
 
 // The app directory MUST include a root layout
@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/wwe7svy.css" />
       </head>
       <body
-        className={`${ibm_plex_mono.className} bg-yellowParchment  font-light text-darkEmerald dark:bg-darkEmerald dark:text-yellowParchment`}
+        className={`${ibm_plex_mono.className} bg-yellowParchment font-light text-darkEmerald dark:bg-darkEmerald dark:text-yellowParchment`}
       >
         <Providers>
           <Navbar />

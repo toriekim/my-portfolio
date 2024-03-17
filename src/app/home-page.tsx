@@ -3,7 +3,7 @@ import '../styles/Home.module.css';
 
 const HomePage = () => {
   return (
-    <div className="mt-[80px] p-[100px]">
+    <div className="mt-[80px] py-12 md:py-28">
       <div className="inline-flex flex-col items-center justify-start gap-10 md:flex-row">
         {/* left-side content */}
         <div className="inline-flex shrink grow basis-0 flex-col items-center justify-center gap-8 self-stretch md:items-end">
@@ -23,8 +23,8 @@ const HomePage = () => {
           </div>
           {/* about button */}
           <Button
-            containerClass="md:w-[166px] md:items-end"
-            buttonClass="md:w-[166px] text-[15px] text-yellowParchment dark:text-darkEmerald bg-magentaPink px-[35px] py-3 dark:bg-chartreuse"
+            containerClass="md:w-44 sm:items-center md:items-end"
+            buttonClass="md:w-44 text-[15px] text-yellowParchment dark:text-darkEmerald bg-magentaPink px-[35px] py-3 dark:bg-chartreuse"
             buttonText="About me"
           />
         </div>
