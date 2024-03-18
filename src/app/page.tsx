@@ -1,10 +1,11 @@
 import React from 'react';
 import { Metadata } from 'next';
 import HomePage from './home-page';
-// import AboutPage from './about/about-page';
 import RolesPage from './roles/roles-page';
 import SkillsPage from './experience/skills-page';
 import ExperiencePage from './experience/experience-page';
+import ProjectsPage from './projects/projects-page';
+import ContactPage from './contact/contact-page';
 
 export const metadata: Metadata = {
   title: 'Torie Kim',
@@ -30,10 +31,11 @@ const Page = () => {
   return (
     <main className="mx-[7vw] md:mx-[6.2vw]">
       <HomePage />
-      {/* <AboutPage /> */}
       <RolesPage />
       <SkillsPage />
       <ExperiencePage />
+      <ProjectsPage />
+      {/* <ContactPage /> */}
     </main>
   );
 };

@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import { IBM_Plex_Mono } from 'next/font/google';
 import Providers from './providers';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
