@@ -6,7 +6,7 @@ const ContactPage = () => {
       <div className="flex w-full grow flex-col items-start justify-start gap-[60px]">
         {/* left-side text */}
         <div className="flex flex-col items-start justify-start gap-10">
-          <h3 className="font-display text-[32px] font-bold leading-[42px] text-magentaPink">
+          <h3 className="font-display text-[32px] font-bold leading-[42px] text-magentaPink dark:text-chartreuse">
             Let’s work together!
           </h3>
           <p className="text-[17px] font-normal leading-[27px]">

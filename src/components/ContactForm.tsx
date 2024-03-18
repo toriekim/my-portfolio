@@ -30,7 +30,7 @@ const ContactForm = () => {
         required
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="flex w-full shrink grow basis-0 bg-zinc-100 px-8 py-5 text-base font-normal"
+        className="flex w-full shrink grow basis-0 rounded-sm bg-zinc-100 px-8 py-5 text-base font-normal text-darkEmerald"
       />
       <input
         name="email"
@@ -39,7 +39,7 @@ const ContactForm = () => {
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="flex w-full shrink grow basis-0 bg-zinc-100 px-8 py-5 text-base font-normal"
+        className="flex w-full shrink grow basis-0 rounded-sm bg-zinc-100 px-8 py-5 text-base font-normal text-darkEmerald"
       />
       <div className="h-56 w-full">
         <textarea
@@ -48,13 +48,13 @@ const ContactForm = () => {
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="flex h-full w-full shrink grow basis-0 resize-none bg-zinc-100 px-8 py-5 text-base font-normal"
+          className="flex h-full w-full shrink grow basis-0 resize-none rounded-sm bg-zinc-100 px-8 py-5 text-base font-normal text-darkEmerald"
         />
       </div>
       {/* button */}
       <button
         type="submit"
-        className="mt-5 flex items-start justify-start rounded-[5px] bg-magentaPink px-[82px] py-[25px] text-center font-display text-xl font-bold leading-[30px] text-yellowParchment"
+        className="mt-5 flex items-start justify-start rounded-[5px] bg-magentaPink px-[82px] py-[25px] text-center font-display text-xl font-bold leading-[30px] text-yellowParchment dark:bg-chartreuse dark:text-darkEmerald"
       >
         Submit
       </button>
