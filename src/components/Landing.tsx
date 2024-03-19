@@ -1,4 +1,5 @@
 import Button from '@/components/Button';
+import Link from 'next/link';
 
 const Landing = () => {
   return (
@@ -20,11 +21,13 @@ const Landing = () => {
           </p>
         </div>
         {/* about button */}
-        <Button
-          containerClass="md:w-44 sm:items-center md:items-end"
-          buttonClass="md:w-44 text-[15px] text-yellowParchment dark:text-darkEmerald bg-magentaPink px-[35px] py-3 dark:bg-chartreuse"
-          buttonText="About me"
-        />
+        <Link href="/about">
+          <Button
+            containerClass="md:w-44 sm:items-center md:items-end"
+            buttonClass="md:w-44 text-[15px] text-yellowParchment dark:text-darkEmerald bg-magentaPink px-[35px] py-3 dark:bg-chartreuse"
+            buttonText="About me"
+          />
+        </Link>
       </div>
       {/* hero image */}
       <picture className="inline-flex shrink grow basis-0 self-stretch">

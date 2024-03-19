@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import { IBM_Plex_Mono } from 'next/font/google';
 import Providers from './providers';
-import Navbar from '@/components/Navbar';
+import Navigation from '@/components/navigation';
 import Footer from '@/components/Footer';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${ibm_plex_mono.className} bg-yellowParchment font-light text-darkEmerald dark:bg-darkEmerald dark:text-yellowParchment`}
       >
         <Providers>
-          <Navbar />
+          <Navigation />
           {children}
           <Footer />
         </Providers>
