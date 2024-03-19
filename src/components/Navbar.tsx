@@ -47,7 +47,7 @@ const Navbar = () => {
     );
     // Set state to new mouse position
     setPrevMousePos(currentMousePos);
-  }, 500);
+  }, 300);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);

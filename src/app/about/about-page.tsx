@@ -12,6 +12,7 @@ const AboutPage = () => {
               className="h-[195px] w-[195px] object-cover"
               src="/images/about-photo.jpg"
               alt="profile photo of torie looking up with a smile"
+              fetchPriority="high"
             />
             <div className="absolute left-0 top-0 h-[195px] w-[195px] border border-darkEmerald" />
           </div>

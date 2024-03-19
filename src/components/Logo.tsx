@@ -15,6 +15,7 @@ const Logo = ({ width, height, className, theme }: Props) => {
       width={width}
       height={height}
       className={'z-50 ' + (className ?? '')}
+      fetchPriority="high"
     />
   );
 };

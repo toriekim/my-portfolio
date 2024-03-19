@@ -18,9 +18,9 @@ const Project = ({ project }: Props) => {
         />
         {/* project text */}
         <div className="flex flex-col items-start justify-start gap-1.5">
-          <h3 className="font-display text-2xl font-bold  text-magentaPink dark:text-chartreuse">
+          <h4 className="font-display text-2xl font-bold  text-magentaPink dark:text-chartreuse">
             {project.title}
-          </h3>
+          </h4>
           <div className="flex flex-col items-start justify-start gap-1">
             <h4 className="text-base font-normal tracking-wide">
               {project.type}
