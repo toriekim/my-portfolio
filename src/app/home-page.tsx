@@ -33,7 +33,7 @@ const HomePage = () => {
         <picture className="inline-flex shrink grow basis-0 self-stretch">
           <img
             id="landingImage"
-            src="/landing-photo.jpg"
+            src="/images/landing-photo.jpg"
             alt="landing profile picture of Torie sitting in dramatic bushes"
             className="object-cover"
           />
