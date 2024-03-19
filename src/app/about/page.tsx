@@ -1,9 +1,11 @@
 import AboutPage from './about-page';
+import StoryPage from './story-page';
 
 const Page = () => {
   return (
-    <main className="mx-14">
+    <main className="">
       <AboutPage />
+      <StoryPage />
     </main>
   );
 };
