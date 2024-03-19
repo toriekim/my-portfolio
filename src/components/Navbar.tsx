@@ -5,35 +5,49 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Logo from './Logo';
-import { menuItems, userData } from '@/constants';
-import { colors } from '@/constants';
+import { menuItems, userData, colors } from '@/constants';
 import { debounce } from '@/utlities/helpers';
 
 const Navbar = () => {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
+
   const [mounted, setMounted] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [prevMousePos, setPrevMousePos] = useState(0);
   const [visible, setVisible] = useState(true);
+
+  const showNavbar = visible ? 'top-0' : 'top-[-80px]';
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const handleScroll = debounce(() => {
-    // find current scroll position
+    // Find current scroll position
     const currentScrollPos = window.scrollY;
-
-    // set state based on location info
+    // Set nav visible state based on scroll location info
+    // Nav visible if user scrolls up more than 70 OR if position is less than 10
     setVisible(
       (prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > 70) ||
         currentScrollPos < 10
     );
-
-    // set state to new scroll position
+    // Set state to new scroll position
     setPrevScrollPos(currentScrollPos);
   }, 100);
+
+  const handleMouseMove = debounce((e: MouseEvent) => {
+    // Find current pointer Y position
+    const currentMousePos = e.clientY;
+    // Nav visible if already is & pointer is moving upwards
+    // OR if pointer is near top of viewport in navbar area
+    setVisible(
+      (visible && prevMousePos > currentMousePos) || currentMousePos < 80
+    );
+    // Set state to new mouse position
+    setPrevMousePos(currentMousePos);
+  }, 500);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -41,7 +55,15 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [prevScrollPos, visible, handleScroll]);
+  }, [handleScroll]);
+
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.addEventListener('mousemove', handleMouseMove);
+    };
+  }, [handleMouseMove]);
 
   const createMenuLinks = (items: string[]) => {
     return items.map((item) => {
@@ -67,9 +89,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-50 mx-auto h-20 w-[100%] bg-yellowParchment  pb-[12px] pl-[30px] pr-[47px] pt-[13px] transition-[top] duration-[0.6s] dark:bg-darkEmerald ${
-        visible ? 'top-0' : 'top-[-64px]'
-      }`}
+      className={`fixed z-50 mx-auto h-20 w-[100%] bg-yellowParchment pb-[12px] pl-[30px] pr-[47px] pt-[13px] transition-[top] duration-[0.6s] dark:bg-darkEmerald ${showNavbar}`}
     >
       <div className="flex items-center justify-between md:flex-row">
         {/* Logo */}
