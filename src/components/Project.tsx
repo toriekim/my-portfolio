@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import Tag from './Tag';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 
 interface Props {
   project: Project;
@@ -12,17 +15,24 @@ const Project = ({ project }: Props) => {
         <Image
           width={256}
           height={192}
-          className="h-48 w-64 shrink grow basis-0 self-stretch object-cover object-bottom"
-          src={'/pages/project-default.jpeg'}
+          className="h-48 w-64 object-cover"
+          src={project.imgUrl ? project.imgUrl : '/pages/project-default.jpeg'}
           alt="project image"
         />
         {/* project text */}
-        <div className="flex flex-col items-start justify-start gap-1.5">
-          <h4 className="font-display text-2xl font-bold  text-magentaPink dark:text-chartreuse">
-            {project.title}
-          </h4>
+        <div className="flex w-full flex-col items-start justify-start gap-1.5">
+          <div className="flex w-full items-center justify-between">
+            <h4 className="font-display text-2xl font-bold">{project.title}</h4>
+            <Link
+              href={project.link}
+              target="_blank"
+              className="hover:text-magentaPink dark:hover:text-chartreuse"
+            >
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            </Link>
+          </div>
           <div className="flex flex-col items-start justify-start gap-1">
-            <h4 className="text-base font-normal tracking-wide">
+            <h4 className="text-base font-medium tracking-wide text-magentaPink dark:text-chartreuse">
               {project.type}
             </h4>
             <p className="text-sm font-normal leading-tight">
