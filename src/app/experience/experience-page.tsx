@@ -1,4 +1,4 @@
-import { userData } from '@/constants';
+import { userData } from '@/constants/userData';
 import Experience from '@/components/Experience';
 
 const ExperiencePage = () => {

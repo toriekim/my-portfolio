@@ -1,5 +1,5 @@
 import Skill from '@/components/Skill';
-import { userData } from '@/constants';
+import { userData } from '@/constants/userData';
 
 const Skills = () => {
   return (

@@ -1,5 +1,6 @@
 import { usePathname } from 'next/navigation';
-import { menuItems, userData, colors } from '@/constants';
+import { menuItems, colors } from '@/constants';
+import { userData } from '@/constants/userData';
 import Link from 'next/link';
 
 interface Props {

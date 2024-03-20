@@ -37,12 +37,16 @@ interface UserData {
   about: {
     title: string;
     description: string[];
+    bio: string[];
+    hobbies: string;
     currentProject: Project | null;
   };
   roles: Role[];
   skills: Skill[];
   experience: Experience[];
+  additionalExperience?: Experience[];
   projects: Project[];
+  additionalProjects?: Project[];
   resumeUrl: string;
   socialLinks: {
     instagram?: string;

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { userData } from '@/constants/userData';
 
 const AboutPage = () => {
   return (
@@ -25,17 +26,30 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-1">
-          <h4 className="font-display text-[1.375rem] text-xl font-bold text-chartreuse dark:text-magentaPink">
-            Bio:
-          </h4>
-          <p className="text-base font-normal leading-relaxed text-yellowParchment dark:text-darkEmerald">
-            With 3 years in tech and over 10 years of professional experience,
-            I&apos;m a scrappy learner who loves solving challenging puzzles and
-            is creatively driven to translate solutions into robust and
-            impactful applications. I have a rich background in writing and
-            editing, graphic design, and hospitality.
-          </p>
+        <div className="flex flex-col gap-8">
+          <section className="flex flex-col gap-1">
+            <h4 className="font-display text-[1.375rem] text-xl font-bold text-chartreuse dark:text-magentaPink">
+              Bio:
+            </h4>
+            <div className="flex flex-col gap-4">
+              {userData.about.bio.map((p, idx) => (
+                <p
+                  key={`about-bio-p-${idx}`}
+                  className="text-base font-normal leading-relaxed text-yellowParchment dark:text-darkEmerald"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+          </section>
+          <section className="flex flex-col gap-1">
+            <h4 className="font-display text-[1.375rem] text-xl font-bold text-chartreuse dark:text-magentaPink">
+              Hobbies:
+            </h4>
+            <p className="text-base font-normal leading-relaxed text-yellowParchment dark:text-darkEmerald">
+              {userData.about.hobbies}
+            </p>
+          </section>
         </div>
       </div>
     </div>

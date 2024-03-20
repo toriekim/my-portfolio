@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import Link from 'next/link';
+import { userData } from '@/constants/userData';
 
 const Landing = () => {
   return (
@@ -9,15 +10,13 @@ const Landing = () => {
         {/* hero text */}
         <div className="flex flex-col items-center justify-center gap-5 text-center md:items-start md:text-left">
           <h1 className="self-stretch py-[25px] font-display text-[5rem] font-normal leading-[5.5rem] tracking-[0.125rem] text-darkGreen dark:text-orangeParchment md:order-1">
-            Victoria Kim
+            {userData.name}
           </h1>
           <h3 className="order-first self-stretch font-display text-[1.75rem] font-bold leading-[30px] tracking-[0.015625rem] text-magentaPink dark:text-chartreuse md:order-2">
-            Software Engineer
+            {userData.designation}
           </h3>
           <p className="self-stretch leading-relaxed tracking-wide md:order-3">
-            Hi, most call me Torie! I thrive in the intersection between
-            artistic creativity and technical solutions, translating ideas into
-            robust applications. Based in Boston, MA.
+            {userData.about.description}
           </p>
         </div>
         {/* about button */}
