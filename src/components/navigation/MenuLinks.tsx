@@ -1,21 +1,16 @@
-import { usePathname } from 'next/navigation';
 import { menuItems, colors } from '@/constants';
 import { userData } from '@/constants/userData';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 interface Props {
   theme: string | undefined;
   setTheme: (theme: string) => void;
-  toggle: () => void;
+  toggle?: () => void;
 }
 
 const MenuLinks = ({ theme, setTheme, toggle }: Props) => {
-  const location = window && window.location;
-  const { pathname, hash } = location;
+  const { pathname, hash } = window.location;
   const path = pathname + hash;
-
-  console.log('path: ', path);
 
   return (
     <div className="flex flex-col items-center gap-11 md:flex-row">
