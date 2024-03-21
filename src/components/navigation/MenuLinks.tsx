@@ -1,6 +1,7 @@
 import { menuItems, colors } from '@/constants';
 import { userData } from '@/constants/userData';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 interface Props {
   theme: string | undefined;
@@ -9,8 +10,14 @@ interface Props {
 }
 
 const MenuLinks = ({ theme, setTheme, toggle }: Props) => {
-  const { pathname, hash } = window.location;
-  const path = pathname + hash;
+  const [mounted, setMounted] = useState(false);
+
+  const isMounted = mounted && window.location;
+  const path = isMounted ? window.location.pathname + window.location.hash : '';
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <div className="flex flex-col items-center gap-11 md:flex-row">
