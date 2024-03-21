@@ -3,6 +3,10 @@ import { Metadata } from 'next';
 import HomePage from './home-page';
 
 export const metadata: Metadata = {
+  metadataBase:
+    process.env.NODE_ENV === 'development'
+      ? new URL(`http://localhost:${process.env.PORT || 3000}`)
+      : new URL(`https://${process.env.VERCEL_URL}`),
   title: 'Torie Kim',
   description: `Hi! I'm a full-stack web developer and bootcamp grad. Get in touch with me!`,
   robots: {
@@ -24,7 +28,7 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <main className="mx-14">
+    <main className="mx-[7vw] md:mx-[6.2vw]">
       <HomePage />
     </main>
   );

@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-work-sans);
+  font-family: var(--font-ibm-plex-mono);
 }
 
 a {
@@ -18,6 +18,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -moz-hyphens: auto;
+  -moz-hyphenate-limit-chars: 6 3 3;
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: 6 3 3;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
 }
 
 :root {

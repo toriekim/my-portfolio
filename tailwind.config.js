@@ -18,6 +18,7 @@ module.exports = {
         redBrown: '#9B4819',
         yellowParchment: '#FBFAF0',
         orangeParchment: '#F4F1E8',
+        magentaPink: '#861D5B',
       },
       boxShadow: {
         vignette: '0 0 200px white inset',
@@ -29,8 +30,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      display: ['Brown Sugar'],
-      body: ['Work Sans'],
+      display: ['the-seasons', 'sans-serif'],
+      body: ['IBM Plex Mono'],
     },
   },
   variants: {

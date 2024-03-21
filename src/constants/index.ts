@@ -15,5 +15,9 @@ export const colors = {
   black: '#000000',
 };
 
-// TO DO: 'contact'
-export const menuItems = ['about', 'portfolio'];
+export const menuItems = [
+  { name: 'about', href: '/about' },
+  { name: 'experience', href: '/#skills-experience' },
+  { name: 'projects', href: '/#projects' },
+  // 'contact'
+];
