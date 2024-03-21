@@ -8,13 +8,13 @@ import '../styles/Home.module.css';
 
 const HomePage = () => {
   return (
-    <div className="mt-[80px] py-12 md:py-28">
+    <div className="mt-[80px]">
       <Landing />
       <RolesPage />
       <SkillsPage />
       <ExperiencePage />
       <ProjectsPage />
-      <ContactPage />
+      {/* <ContactPage /> */}
     </div>
   );
 };

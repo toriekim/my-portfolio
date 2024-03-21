@@ -24,6 +24,7 @@ interface Skill {
 interface Role {
   name: string;
   description: string;
+  imgUrl: string;
 }
 
 interface UserData {

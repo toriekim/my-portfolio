@@ -3,7 +3,10 @@ import { userData } from '@/constants/userData';
 
 const ProjectsPage = () => {
   return (
-    <div className="flex flex-col items-center justify-start gap-[60px] py-[100px]">
+    <div
+      id="projects"
+      className="flex flex-col items-center justify-start gap-[60px] py-[100px]"
+    >
       <h2 className="text-center font-display text-5xl font-bold leading-[60px]">
         Projects
       </h2>

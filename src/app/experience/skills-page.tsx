@@ -3,7 +3,7 @@ import { userData } from '@/constants/userData';
 
 const Skills = () => {
   return (
-    <div className="py-12">
+    <div id="skills-experience" className="py-12">
       <div className="flex shrink grow basis-0 flex-col items-start justify-start gap-2.5">
         <h2 className="font-display text-5xl font-bold leading-[3rem]">
           Skills

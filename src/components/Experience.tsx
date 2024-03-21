@@ -17,6 +17,7 @@ const Experience = ({ experience }: Props) => {
       </div>
       <Link
         href={experience.companyLink}
+        target="_blank"
         className="text-base font-semibold leading-snug tracking-wide hover:text-magentaPink dark:font-medium dark:hover:text-chartreuse"
       >
         {experience.company}

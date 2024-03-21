@@ -21,24 +21,24 @@ const Project = ({ project }: Props) => {
         />
         {/* project text */}
         <div className="flex w-full flex-col items-start justify-start gap-1.5">
-          <div className="flex w-full items-center justify-between">
-            <h4 className="font-display text-2xl font-bold">{project.title}</h4>
+          <div className="flex w-full flex-col">
             <Link
               href={project.link}
               target="_blank"
-              className="hover:text-magentaPink dark:hover:text-chartreuse"
+              className="flex w-full items-center justify-between hover:text-magentaPink dark:hover:text-chartreuse"
             >
+              <h4 className="font-display text-2xl font-bold text-magentaPink dark:text-chartreuse">
+                {project.title}
+              </h4>
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </Link>
-          </div>
-          <div className="flex flex-col items-start justify-start gap-1">
-            <h4 className="text-base font-medium tracking-wide text-magentaPink dark:text-chartreuse">
+            <h4 className="text-base font-medium tracking-wide">
               {project.type}
             </h4>
-            <p className="text-sm font-normal leading-tight">
-              {project.description}
-            </p>
           </div>
+          <p className="text-sm font-normal leading-tight">
+            {project.description}
+          </p>
         </div>
       </div>
       {/* tags */}

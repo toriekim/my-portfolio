@@ -4,7 +4,7 @@ import { userData } from '@/constants/userData';
 
 const Landing = () => {
   return (
-    <div className="inline-flex flex-col items-center justify-start gap-10 md:flex-row">
+    <div className="inline-flex flex-col items-center justify-start gap-10 py-12 md:flex-row md:py-28">
       {/* left-side content */}
       <div className="inline-flex shrink grow basis-0 flex-col items-center justify-center gap-8 self-stretch md:items-end">
         {/* hero text */}

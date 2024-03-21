@@ -31,7 +31,7 @@ const Sidebar = ({ isOpen, toggle, theme, setTheme }: Props) => {
         </svg>
       </button>
 
-      <MenuLinks theme={theme} setTheme={setTheme} />
+      <MenuLinks theme={theme} setTheme={setTheme} toggle={toggle} />
     </div>
   );
 };

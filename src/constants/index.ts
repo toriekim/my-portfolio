@@ -15,4 +15,9 @@ export const colors = {
   black: '#000000',
 };
 
-export const menuItems = ['about', 'experience', 'projects', 'contact'];
+export const menuItems = [
+  { name: 'about', href: '/about' },
+  { name: 'experience', href: '/#skills-experience' },
+  { name: 'projects', href: '/#projects' },
+  // 'contact'
+];

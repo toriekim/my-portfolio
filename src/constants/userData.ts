@@ -1,15 +1,15 @@
 export const userData: UserData = {
-  githubUsername: '',
-  name: 'Torie Kim',
+  githubUsername: '@toriekim',
+  name: 'Victoria Kim',
   designation: 'Software Developer',
   avatarUrl: '',
-  email: '',
+  email: 'hello@toriekim.dev',
   phoneNumber: '',
   address: 'Boston, MA',
   projects: [
     {
       title: 'Portfolio Website',
-      description: `You're on it now! Chose all my favorite colors based on the photo taken by photographer Alyssa Blumstein. This was the focal point from which I designed the logo and brand. Used Figma to wireframe and then translated it into code. I was motivated to learn and use Next and Tailwind, because of their popularity in the indstury.`,
+      description: `You're on it now! Inspired by the photo taken of me by photographer Alyssa Blumstein. Used Figma to wireframe. I was motivated to learn and use Next and Tailwind, because of their popularity in the indstury.`,
       link: 'https://github.com/toriekim/my-portfolio',
       type: 'Website / SPA',
       imgUrl: '',
@@ -18,7 +18,7 @@ export const userData: UserData = {
     {
       title: 'Tingle',
       description:
-        'Social dating app  that cultivates connections between people through selected niche interests. Users can choose from a list of 150+ interests. Features 13 distinct screen views, Firebase Auth, algorithmic matching, search, chat, NUX onboarding, and profile views. Team of 3.',
+        'Social dating app that cultivates connections between users through selected niche interests (from a list of 150+). Features 13 distinct screen views, Firebase Auth, matching, search, chat, NUX onboarding. Team of 3.',
       link: 'https://github.com/03-cs-wockys-waywards/capstone',
       type: 'Social Media Mobile App',
       imgUrl: '/images/tingle-mockup.jpg',
@@ -133,15 +133,18 @@ export const userData: UserData = {
       name: 'Fullstack Development',
       description:
         'I blend creative design with technical solutions to construct digital landscapes with intuitive user experiences and efficient backend functionality.',
+      imgUrl: '/pages/code-default.jpeg',
     },
     {
       name: 'Graphic Design',
       description:
         'I craft bespoke logos, brands, and websites that encapsulate the unique personality and business identity of my clients, ensuring their brand stands out authentically.',
+      imgUrl: '/pages/design-default.jpeg',
     },
     {
       name: 'Mentorship',
       description: `I find joy in teaching and guiding aspiring students, witnessing their evolution into skilled professionals in the tech industry.`,
+      imgUrl: '/pages/mentor-default.jpeg',
     },
   ],
   skills: [
