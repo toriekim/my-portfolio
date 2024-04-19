@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTheme } from 'next-themes';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import ScrollToTopButton from './ScrollToTop';
 
 const Navigation = () => {
   const { theme, setTheme } = useTheme();
@@ -22,6 +23,7 @@ const Navigation = () => {
         setTheme={setTheme}
       />
       <Navbar toggle={toggle} theme={theme} setTheme={setTheme} />
+      <ScrollToTopButton />
     </>
   );
 };

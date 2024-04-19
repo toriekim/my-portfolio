@@ -1,4 +1,4 @@
-type IconType = 'linkedin' | 'github' | 'mailto';
+type IconType = 'linkedin' | 'github' | 'mailto' | 'up';
 
 interface Project {
   title: string;
