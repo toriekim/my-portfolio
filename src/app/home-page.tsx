@@ -8,7 +8,7 @@ import '../styles/Home.module.css';
 
 const HomePage = () => {
   return (
-    <div className="mt-[80px]">
+    <div className="mt-16">
       <Landing />
       <RolesPage />
       <SkillsPage />

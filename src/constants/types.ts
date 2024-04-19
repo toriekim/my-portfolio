@@ -1,3 +1,5 @@
+type IconType = 'linkedin' | 'github' | 'mailto' | 'up';
+
 interface Project {
   title: string;
   link: string;
@@ -52,8 +54,8 @@ interface UserData {
   socialLinks: {
     instagram?: string;
     twitter?: string;
-    linkedin?: string;
-    github?: string;
+    linkedin: string;
+    github: string;
     facebook?: string;
     leetcode?: string;
   };
